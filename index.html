@@ -1,0 +1,116 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="Foundation | Welcome, AngularJs, JQuery, Kevin Kong" />
+    <meta name="description" content="This is a test page made by Kevin Kong . Here we learned Angularjs, a very popular js framework ." />
+    <title>Foundation | Welcome</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/main.css" />
+	<link href='http://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.min.js"></script>
+	<script type="text/javascript" src="js/main.js" ></script>
+	<script type="text/javascript" src="js/jquery.min.js" ></script>
+  </head>
+
+  <body ng-app="" >
+	<!--script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js">< /script-->
+    <div class="row">
+      <div class="large-12 columns title">
+        <h1>Marvelous!</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="large-7 columns title">
+        <h2>Lorem lpsum is simply dummy text of the printing and typesetting industry. Lorem lpsum has been the industry's standard dummy text over since.</h2>
+      </div>
+    </div>
+	
+	<div style="height:2em;clear:both;"></div>
+
+	<div class="row">
+      <div class="large-10 columns">
+		<div class="contenttitlebg contenttitletext  columns">
+			<h2>ADD AN ITEM</h2>
+		</div>
+	 </div>
+   </div>
+	<blockquote></blockquote>
+	<div class="row" ng-controller="mainCtrl" ng-init="">
+      <div class="large-10 columns">
+      	<div class="panel">
+	        <div class="row">
+				<!--*********Left part of content begin here ***********************-->
+	        	<div class="large-4 medium-4 columns" >
+	    			<div><input type="text" class="leftinput  large-11 medium-11"  ng-model="dataseach.itemname"  ng-click="itemnameClick(dataseach.itemname)" ng-blur="itemnameBlur(dataseach.itemname)"/></div>
+					<blockquote></blockquote>
+
+					<div>
+						<select name="columnname" id="columnname" class="leftinput  large-11 medium-11" ng-change="change(x)" ng-model="x">
+							<option value="">CHOOSE COLUMN</option>
+							<option value="1">COLUMN 1</option>
+							<option value="2">COLUMN 2</option>
+						</select>
+					</div>
+					<!--div class="sb ">
+						<div class="b leftinput  large-11 medium-11" id="selectTest0">CHOOSE COLUMN</div>
+						<select name="columnname" id="columnname" onchange="changeSelect(this,'selectTest0')" class="">
+						<option value="1">COLUMN 1</option>
+						<option value="2">COLUMN 2</option>
+						</select>
+					</div>
+	    			<div--> 
+				
+					<blockquote></blockquote>
+					<blockquote></blockquote>
+
+					<div><input type="button" class="leftinput  large-11 medium-11" value="ADD ITEM"  ng-click="insert();afterInsert();"/></div>
+
+					<blockquote></blockquote>
+					
+					<div class="large-11 medium-11 contenttitletext" ><H3>SEARCH AN ITEM</H3></div>
+					<div  class="leftinput  large-11 medium-11">
+						<input type="text" class="leftinputsmall  large-10 medium-10" ng-model="searchvalue" /><img src="images/Magnifier.png"/>
+					</div>
+	    		</div>
+				<!--*********Left part of content end here ***********************-->
+				<!--*********Right part of content begin here ***********************-->
+	        	<div class="large-8 medium-8 columns right" id="rightListContent">
+	        		 <div class="rightborder">
+							 <div class="rightborderInner large-6" id="rightListContentleft"  >
+									<div class="columntitlebg listtitletext  columns" >
+										<h3>COLUMN 1 </h3>
+									</div>
+									<div class="listtitletext columns  large-12" id="divUlLeft">
+										<ul>
+												<li ng-repeat="list in lists | filter : searchvalue">{{list.itemname}}  <img src=""   ng-click="remove($index,1)"/></li>
+
+										</ul>
+									</div>
+									<div style="height:0px;clear:both;"></div>
+							 </div>
+							 <div class="rightborderInner  large-6" id="rightListContentright"  >
+									<div class="columntitlebg listtitletext  columns">
+										<h3>COLUMN 2 </h3>
+									</div>
+									<div class="listtitletext columns  large-12 " id="divUlRight">
+										<ul>
+												<li ng-repeat="list in listsRight | filter : searchvalue">{{list.itemname}}  <img src=""   ng-click="remove($index,2)"/></li>
+
+										</ul>
+										
+									</div>
+							 </div>
+						
+					 </div>
+	        	</div>        
+				<!--*********Right part of content end here ***********************-->
+			</div>
+      	</div>
+      </div>
+    </div>
+	<blockquote></blockquote>
+	<blockquote></blockquote>
+  </body>
+</html>

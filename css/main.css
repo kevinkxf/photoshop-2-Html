@@ -1,0 +1,171 @@
+.title h1{
+	color:white;
+	font-family: 'Merriweather' !important;
+	font-style: italic;
+	font-weight: 900;
+	font-size:4em;
+}
+
+.title h2{
+	color:#8FFFEE;
+	font-family:sans-serif, 'Merriweather' !important;
+	font-weight: 200;
+	font-size:1.5em;
+}
+
+.contenttitlebg{
+	background-image:url(../images/bg1.jpg);
+	height:55px;
+	/*border:solid 1px white;
+	background-repeat:no repeat;*/
+}
+
+.contenttitletext h2{
+	color:white;
+	text-align:center;
+	font-size:1.5em;
+	font-family:sans-serif, 'Merriweather' !important;
+	font-weight: 200;
+	vertical-align:middle;
+}
+.contenttitletext h3{
+	color:white;
+	text-align:left;
+	font-size:1.1em;
+	font-weight: bold;
+	font-family:sans-serif, 'Merriweather' !important;
+	vertical-align:middle;
+
+}
+
+.columntitlebg{
+	background-image:url(../images/bg2.jpg);
+	height:55px;
+}
+.listtitletext{
+	width:100%;
+	padding:0;
+}
+.listtitletext h3{
+	color:white;
+	text-align:center;
+	font-size:1.1em;
+	font-weight: bold;
+	font-family:sans-serif, 'Merriweather' !important;
+	vertical-align:middle;
+
+}
+.listtitletext ul {
+	padding:0;
+	margin:0;
+	width:100%;
+	list-style-position:inside;
+	list-style-type:none;
+}
+.listtitletext ul li{
+	background-color:#BCC0C7;
+	height:2em;
+	color:white;
+	font-size:1.2em;
+	font-weight:bold;
+	padding-left:1em;
+	padding-right:0.3em;
+}
+.listtitletext ul li:nth-child(odd){
+	background-color:white;
+	color:#BCC0C7;
+}
+.listtitletext ul li img{
+	float:right;
+	width:33px;
+	height:33px;
+	background-image:url(../images/bgCrossB.png);
+	cursor:pointer;
+	border:0;
+}
+.listtitletext ul li img:nth-child(odd){
+	background-image:url(../images/bgCrossA.png);
+}
+.leftinput{
+	border:solid 2px white;
+	background-color:#9BA1AB;
+	height:2em;
+	color:#D6D8DC;
+	font-size:1.2em;
+}
+
+input[type="button"].leftinput{
+	border:solid 2px white;
+	background-color:#9BA1AB;
+	height:2em;
+	color:white;
+	font-size:1.2em;
+}
+
+.leftinputsmall{
+	border:0;
+	background-color:#9BA1AB;
+	height:1.5em;
+	color:#D6D8DC;
+	font-size:1.2em;
+}
+
+input[type="button"]:active{
+	color:#aaa;
+}
+
+ select option:nth-child(odd){
+	background-color:#eee;
+	color:#9BA1AB;
+ } 
+
+.rightborder{
+	border:solid 2px white;
+	_height:400px; 
+	min-height:400px; 
+	position:relative;
+	float:right;
+
+}
+.rightborderInner{
+	border:solid 2px white;
+	_height:400px; 
+	min-height:400px; 
+	position:relative;
+	float:left;
+}
+
+#rightListContent{
+	width:540px;
+}
+
+#rightListContentleft{
+	width:253px;
+}
+#rightListContentright{
+	width:253px;
+}
+.imgBtn{
+	cursor:pointer;
+}
+/*==For Drop down Menu======================================*/
+/*
+.sb {
+    position:relative;
+}
+
+.sb .b 
+    position:absolute;
+    padding:0 2px;
+    overflow:hidden;
+    white-space :nowrap;text-overflow:ellipsis;
+}
+#columnname {
+    position: absolute;
+    top:10px;
+    left:20px;
+    clip:rect(0px 50px 20px 0px);
+}
+
+*/
+/*==Drop down Menu over=====================================*/
